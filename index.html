@@ -8,16 +8,19 @@
 </head>
 <body>
     <div id="barra_superior">
-        <div id="Atividades" class="barra_superior_click">Atividades</div>
-        <div id="data-hora" class="barra_superior_click"></div>
-        <div id="Sobre" class="barra_superior_click">Sobre</div>
+        <div id="atividades" class="barra_superior_click" onmousemove="buttonon(`atividades`)" onmouseout="buttonoff(`atividades`)" onmousedown="atividades()">Atividades</div>
+        <div id="data-hora" class="barra_superior_click" onmousemove="buttonon(`data-hora`)" onmouseout="buttonoff(`data-hora`)"></div>
+        <div id="sobre" class="barra_superior_click" onmousemove="buttonon(`sobre`)" onmouseout="buttonoff(`sobre`)">Sobre</div>
     </div>
 
-    <div id="Corpo">
-        <div id="Background">
+    <div id="corpo" class="configcorpo">
+        <div id="background">
         </div>
     </div>
 
+    <div id="menuapp" class="configcorpo">
+
+    </div>
 </body>
 
     <script src="/JavaScript/Script.js"></script>
