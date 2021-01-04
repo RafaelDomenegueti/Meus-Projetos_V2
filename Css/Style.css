@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Linux;
+    font-size: normal;
+    font-weight: normal;
+    src: url(../Fonts/LinLibertine_aBS.ttf);
+}
+
+#barra_superior{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: #1E1E24;
+    z-index: 1;
+}
+.barra_superior_click{
+    position: fixed;
+    color: white;
+    top: 5px;
+    padding-right: 10px;
+    font-family: Linux;
+    padding: 2px;
+    width: 100%;
+}
+#data-hora{
+    left: 50%;
+    margin-left: -70px;
+    width: 140px;
+    text-align: center;
+}
+#Atividades{
+    left: 10px;
+    width: unset;
+}
+#Sobre{
+    right: 10px;
+    width: unset;
+}
+
+#Corpo{
+    position: fixed;
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    z-index: 2;
+}
