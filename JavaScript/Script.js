@@ -32,20 +32,13 @@ var Background = Math.floor(Math.random() * 6 + 1)
 console.log(Background)
 corpo.style.backgroundImage = 'url(../Backgrounds/'+ Background +'.gif)'
 
-// Animações
-function buttonon(onbutton){
-    document.getElementById(onbutton).style.backgroundColor="#6D6A75"
-}
-function buttonoff(offbutton){
-    document.getElementById(offbutton).style.backgroundColor="#1E1E24"
-}
-
+// Menu de Atividades
 function atividades(){
-    menuapp.animate([
-        {transform: 'translate(0)'},
-        {transform: 'translate(150px, 200px)'}
-    ], 500);
-    animation.addEventListener('finish', function() {
-        boxElement.style.transform = 'translate(150px, 200px)';
-    });
+    if (menuapp.style.display == "block"){
+        menuapp.style.display="none"
+        console.log("None")
+    }else {
+        menuapp.style.display="block"
+        console.log("Block")
+    }
 }

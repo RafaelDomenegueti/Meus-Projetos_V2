@@ -5,6 +5,7 @@
     src: url(../Fonts/LinLibertine_aBS.ttf);
 }
 
+
 #barra_superior{
     position: fixed;
     top: 0px;
@@ -17,14 +18,17 @@
 .barra_superior_click{
     position: fixed;
     color: white;
-    top: 3px;
+    top: 2px;
     padding-right: 10px;
     font-family: Linux;
-    padding: 3px;
+    padding: 2px;
     width: 100%;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
+    background-color: #1E1E24;
+    border-color: #1E1E24;
+    font-size: 12pt;
 }
 #data-hora{
     left: 50%;
@@ -39,6 +43,7 @@
     right: 10px;
     width: 60px;
 }
+
 
 .configcorpo{
     position: fixed;
@@ -58,7 +63,8 @@
     z-index: 2;
 }
 #menuapp{
-
-    background-color: aquamarine;
+    background-color: #31313a;
+    opacity: 90%;
+    display: none;
     z-index: 3;
 }
