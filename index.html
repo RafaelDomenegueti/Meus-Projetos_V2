@@ -6,7 +6,7 @@
     <title>My OS</title>
     <link rel="stylesheet" href="/Css/Style.css">
 </head>
-<body>
+<body onload="onload()">
     <div id="barra_superior">
         <button id="atividades" class="barra_superior_click" onmousedown="atividades()">Atividades</button>
         <button id="data-hora" class="barra_superior_click"></button>
@@ -23,7 +23,9 @@
     </div>
 
     <div id="sobre_janela">
-
+        <div id="sobre_janela_topbar">
+            <img src="./Images/Detalhes/Close_button" id="close_button" onmouseout="backbuttonout('close_button')" onmousemove="backbuttonon('close_button')" onmousedown="closebutton('sobre_janela')">
+        </div>
     </div>
 
 

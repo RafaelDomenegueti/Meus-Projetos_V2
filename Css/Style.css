@@ -66,7 +66,7 @@
     background-color: #31313a;
     opacity: 90%;
     display: none;
-    z-index: 3;
+    z-index: 4;
 }
 
 
@@ -75,9 +75,24 @@
     position: fixed;
     width: 300px;
     height: 400px;
+    display: none;
     top: 20%;
     left: 50%;
-    transform: translateX(-50%);
-    display: none;
+    margin-left: -150px;
     z-index: 3;
+}
+#sobre_janela_topbar{
+    position: fixed;
+    background-color: #1E1E24;
+    width: 300px;
+    height: 30px;
+}
+#close_button{
+    position: absolute;
+    width: 25px;
+    top: 50%;
+    margin-top: -13px;
+    left: 100%;
+    margin-left: -27px;
+    border-radius: 100%;
 }

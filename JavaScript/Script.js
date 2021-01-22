@@ -2,6 +2,7 @@ var data_hora = document.getElementById("data-hora")
 var corpo = document.getElementById("corpo")
 var menuapp = document.getElementById("menuapp")
 var sobre_janela = document.getElementById("sobre_janela")
+var sobre_janela_topbar = document.getElementById("sobre_janela_topbar")
 
 // Data e Hora
 var now = new Date()
@@ -28,10 +29,21 @@ setInterval(function(){
     data_hora.innerHTML = `${hora}:${minuto} &#x2022 ${dia}/${mes}/${ano}`
 }, 100)
 
+// Animações
+function backbuttonon(p) {
+    document.getElementById(p).style.backgroundColor="#6D6A75"
+}
+function backbuttonout(p) {
+    document.getElementById(p).style.backgroundColor="#1E1E24"
+}
+function closebutton(p){
+    document.getElementById(p).style.display="none"
+}
+
 // Backgrounds
 var Background = Math.floor(Math.random() * 6 + 1)
 console.log(Background)
-corpo.style.backgroundImage = 'url(../Backgrounds/'+ Background +'.gif)'
+corpo.style.backgroundImage = 'url(../Images/Backgrounds/'+ Background +'.gif)'
 
 // Menu de Atividades
 function atividades(){
@@ -57,7 +69,7 @@ function sobre(){
 
 // Janelas arrastaveis
 window.onload = function () {
-    Dragable(document.getElementById("sobre_janela"));
+    Dragable(sobre_janela_topbar);
 };
 
 //Adiciona eventos pra navegadores modernos e antigos
@@ -97,6 +109,11 @@ function Dragable(el)
 
             el.style.left = (x - xel) + 'px';
             el.style.top  = (y - yel) + 'px';
+
+            // sobre_janela imita a sobre_janela_topbar
+            sobre_janela.style.left = (x - xel) + 'px';
+            sobre_janela.style.top  = (y - yel) + 'px';
+            sobre_janela.style.marginLeft = "0"
         }
     });
 
