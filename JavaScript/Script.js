@@ -3,6 +3,7 @@ var corpo = document.getElementById("corpo")
 var menuapp = document.getElementById("menuapp")
 var sobre_janela = document.getElementById("sobre_janela")
 var sobre_janela_topbar = document.getElementById("sobre_janela_topbar")
+var close_button = document.getElementById("close_button")
 
 // Data e Hora
 var now = new Date()
@@ -35,9 +36,6 @@ function backbuttonon(p) {
 }
 function backbuttonout(p) {
     document.getElementById(p).style.backgroundColor="#1E1E24"
-}
-function closebutton(p){
-    document.getElementById(p).style.display="none"
 }
 
 // Backgrounds
