@@ -37,6 +37,12 @@ function backbuttonon(p) {
 function backbuttonout(p) {
     document.getElementById(p).style.backgroundColor="#1E1E24"
 }
+function appanimationon(a){
+    document.getElementById(a).style.width="250px"
+}
+function appanimationoff(a){
+    document.getElementById(a).style.width="150px"
+}
 
 // Backgrounds
 var Background = Math.floor(Math.random() * 6 + 1)
@@ -54,8 +60,21 @@ function atividades(){
     }
 }
 
+// Apps
+function game(){
+    menuapp.style.display="none"
+}
+function calculadora(){
+    menuapp.style.display="none"
+}
+function calendario(){
+    menuapp.style.display="none"
+}
+
 // Sobre
 function sobre(){
+    menuapp.style.display="none"
+    
     if (sobre_janela.style.display == "block"){
         sobre_janela.style.display="none"
         console.log("None")

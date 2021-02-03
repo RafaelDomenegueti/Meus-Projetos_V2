@@ -63,6 +63,7 @@
     z-index: 2;
 }
 #menuapp{
+    position: fixed;
     background-color: #31313a;
     opacity: 90%;
     display: none;
@@ -98,5 +99,10 @@
 }
 
 .icons{
-    width: 25%;
+    width: 150px;
+    cursor: pointer;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(40, 119, 93);
 }
