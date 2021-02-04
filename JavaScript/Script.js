@@ -68,35 +68,25 @@
     }
 
 
-// Apps
-    function game(){
-        menuapp.style.display="none"
-    }
-    function calculadora(){
-        menuapp.style.display="none"
-    }
-    function calendario(){
-        menuapp.style.display="none"
-    }
-
-
-// Sobre
-    function sobre(){
+// Abrir e Fechar Janelas
+    function abrir_janela(a){
         menuapp.style.display="none"
         
-        if (sobre_janela.style.display == "block"){
-            sobre_janela.style.display="none"
+        if (document.getElementById(a).style.display == "block"){
+            document.getElementById(a).style.display="none"
             console.log("None")
         }else {
-            sobre_janela.style.display="block"
+            document.getElementById(a).style.display="block"
             console.log("Block")
         }
     }
 
+var asds = document.getElementById("calculadora_janela")
 
 // Janelas arrastaveis
     window.onload = function () {
         Dragable(sobre_janela_topbar);
+        Dragable(calculadora_janela_topbar);
     };
 
     //Adiciona eventos pra navegadores modernos e antigos
@@ -137,10 +127,10 @@
                 el.style.left = (x - xel) + 'px';
                 el.style.top  = (y - yel) + 'px';
 
-                // sobre_janela imita a sobre_janela_topbar
+                // top_bar imita a janela
                 sobre_janela.style.left = (x - xel) + 'px';
                 sobre_janela.style.top  = (y - yel) + 'px';
-                sobre_janela.style.marginLeft = "0"
+                sobre_janela.style.marginLeft = "0";
             }
         });
 
