@@ -1,108 +1,114 @@
-@font-face {
-    font-family: Linux;
-    font-size: normal;
-    font-weight: normal;
-    src: url(../Fonts/LinLibertine_aBS.ttf);
-}
+/* Fonts */
+    @font-face {
+        font-family: Linux;
+        font-size: normal;
+        font-weight: normal;
+        src: url(../Fonts/LinLibertine_aBS.ttf);
+    }
 
 
-#barra_superior{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 40px;
-    width: 100%;
-    background-color: #1E1E24;
-    z-index: 1;
-}
-.barra_superior_click{
-    position: fixed;
-    color: white;
-    top: 2px;
-    padding-right: 10px;
-    font-family: Linux;
-    padding: 2px;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    background-color: #1E1E24;
-    border-color: #1E1E24;
-    font-size: 12pt;
-}
-#data-hora{
-    left: 50%;
-    width: 140px;
-    margin-left: -70px;
-}
-#atividades{
-    left: 10px;
-    width: 100px;
-}
-#sobre{
-    right: 10px;
-    width: 60px;
-}
+/* Barra Superior */
+    #barra_superior{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 40px;
+        width: 100%;
+        background-color: #1E1E24;
+        z-index: 1;
+    }
+    .barra_superior_click{
+        position: fixed;
+        color: white;
+        top: 2px;
+        padding-right: 10px;
+        font-family: Linux;
+        padding: 2px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        background-color: #1E1E24;
+        border-color: #1E1E24;
+        font-size: 12pt;
+    }
+    #data-hora{
+        left: 50%;
+        width: 140px;
+        margin-left: -70px;
+    }
+    #atividades{
+        left: 10px;
+        width: 100px;
+    }
+    #sobre{
+        right: 10px;
+        width: 60px;
+    }
 
 
-.configcorpo{
-    position: fixed;
-    top: 30px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-#corpo{
-    background-attachment: fixed;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    z-index: 2;
-}
-#menuapp{
-    position: fixed;
-    background-color: #31313a;
-    opacity: 90%;
-    display: none;
-    z-index: 4;
-}
+/* Background */
+    .configcorpo{
+        position: fixed;
+        top: 30px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    #corpo{
+        background-attachment: fixed;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        z-index: 2;
+    }
 
 
-#sobre_janela{
-    background-color: #1E1E24;
-    position: fixed;
-    width: 300px;
-    height: 400px;
-    display: none;
-    top: 20%;
-    left: 50%;
-    margin-left: -150px;
-    z-index: 3;
-}
-#sobre_janela_topbar{
-    position: fixed;
-    background-color: #1E1E24;
-    width: 300px;
-    height: 30px;
-}
-#close_button{
-    position: absolute;
-    width: 25px;
-    top: 50%;
-    margin-top: -13px;
-    left: 100%;
-    margin-left: -27px;
-    border-radius: 100%;
-}
+/* Menu de Aplicativos */
+    #menuapp{
+        position: fixed;
+        background-color: #31313a;
+        opacity: 90%;
+        display: none;
+        z-index: 4;
+    }
+    .icons{
+        width: 150px;
+        cursor: pointer;
+    }
+    .nomeapp{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(40, 119, 93);
+    }
 
-.icons{
-    width: 150px;
-    cursor: pointer;
-}
-h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(40, 119, 93);
-}
+
+/* Janela Sobre */
+    #sobre_janela{
+        background-color: #1E1E24;
+        position: fixed;
+        width: 300px;
+        height: 400px;
+        display: none;
+        top: 20%;
+        left: 50%;
+        margin-left: -150px;
+        z-index: 3;
+    }
+    #sobre_janela_topbar{
+        position: fixed;
+        background-color: #1E1E24;
+        width: 300px;
+        height: 30px;
+    }
+    #close_button{
+        position: absolute;
+        width: 25px;
+        top: 50%;
+        margin-top: -13px;
+        left: 100%;
+        margin-left: -27px;
+        border-radius: 100%;
+    }

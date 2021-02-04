@@ -7,34 +7,41 @@
     <link rel="stylesheet" href="/Css/Style.css">
 </head>
 <body onload="onload()">
+
+    <!-- Barra Superior -->
     <div id="barra_superior">
         <button id="atividades" class="barra_superior_click" onmousedown="atividades()">Atividades</button>
         <button id="data-hora" class="barra_superior_click"></button>
         <button id="sobre" class="barra_superior_click" onmousedown="sobre()">Sobre</button>
     </div>
 
+    <!-- Background -->
     <div id="corpo" class="configcorpo">
         <div id="background">
         </div>
     </div>
 
+    <!-- Menu de Aplicativos -->
     <div id="menuapp" class="configcorpo">
 
+        <!-- Tabela de Icones -->
         <table style="text-align: center; height: 100%; width: 100%;">
             <tr>
-                <td><img src="Images/Detalhes/icon_calculator.png" class="icons" onmousemove="appanimationon('calculadora')" onmouseout="appanimationoff('calculadora')" id="calculadora" onmousedown="calculadora()"><h1>Calculadora</h1></td>
-                <td><img src="Images/Detalhes/icon_game.png" class="icons" onmousemove="appanimationon('game')" onmouseout="appanimationoff('game')" id="game" onmousedown="game()"><h1>Game</h1></td>
-                <td><img src="Images/Detalhes/icon_calendar.png" class="icons" onmousemove="appanimationon('calendario')" onmouseout="appanimationoff('calendario')" id="calendario" onmousedown="calendario()"><h1>Calendário</h1></td>
+                <td><img src="Images/Detalhes/icon_calculator.png" class="icons" onmousemove="appanimationon('calculadora')" onmouseout="appanimationoff('calculadora')" id="calculadora" onmousedown="calculadora()"><h1 class="nomeapp">Calculadora</h1></td>
+                <td><img src="Images/Detalhes/icon_game.png" class="icons" onmousemove="appanimationon('game')" onmouseout="appanimationoff('game')" id="game" onmousedown="game()"><h1 class="nomeapp">Game</h1></td>
+                <td><img src="Images/Detalhes/icon_calendar.png" class="icons" onmousemove="appanimationon('calendario')" onmouseout="appanimationoff('calendario')" id="calendario" onmousedown="calendario()"><h1 class="nomeapp">Calendário</h1></td>
             </tr>
         </table>
     </div>
 
+    <!-- Janela Sobre -->
     <div id="sobre_janela">
         <div id="sobre_janela_topbar">
             <img src="./Images/Detalhes/Close_button" id="close_button" onmouseout="backbuttonout('close_button')" onmousemove="backbuttonon('close_button')" onmouseup="sobre()">
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="/JavaScript/Script.js"></script>
 
 </body>
