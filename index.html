@@ -12,7 +12,7 @@
     <div id="barra_superior">
         <button id="atividades" class="barra_superior_click" onmousedown="atividades()">Atividades</button>
         <button id="data-hora" class="barra_superior_click"></button>
-        <button id="sobre" class="barra_superior_click" onmousedown="abrir_janela('sobre_janela')">Sobre</button>
+        <button id="sobre" class="barra_superior_click" onmousedown="abrir_fechar_janela('sobre_janela')">Sobre</button>
     </div>
 
     <!-- Background -->
@@ -27,9 +27,9 @@
         <!-- Tabela de Icones -->
         <table style="text-align: center; height: 100%; width: 100%;">
             <tr>
-                <td><img src="Images/Detalhes/icon_calculator.png" class="icons" onmousemove="appanimationon('calculadora')" onmouseout="appanimationoff('calculadora')" id="calculadora" onmousedown="abrir_janela('calculadora_janela')"><h1 class="nomeapp">Calculadora</h1></td>
-                <td><img src="Images/Detalhes/icon_game.png" class="icons" onmousemove="appanimationon('game')" onmouseout="appanimationoff('game')" id="game" onmousedown="game()"><h1 class="nomeapp">Game</h1></td>
-                <td><img src="Images/Detalhes/icon_calendar.png" class="icons" onmousemove="appanimationon('calendario')" onmouseout="appanimationoff('calendario')" id="calendario" onmousedown="calendario()"><h1 class="nomeapp">Calendário</h1></td>
+                <td><img src="Images/Detalhes/icon_calculator.png" class="icons" onmousemove="appanimationon('calculadora')" onmouseout="appanimationoff('calculadora')" id="calculadora" onmousedown="abrir_fechar_janela('calculadora_janela')"><h1 class="nomeapp">Calculadora</h1></td>
+                <td><img src="Images/Detalhes/icon_game.png" class="icons" onmousemove="appanimationon('game')" onmouseout="appanimationoff('game')" id="game" onmousedown="abrir_fechar_janela('game_janela')"><h1 class="nomeapp">Game</h1></td>
+                <td><img src="Images/Detalhes/icon_calendar.png" class="icons" onmousemove="appanimationon('calendario')" onmouseout="appanimationoff('calendario')" id="calendario" onmousedown="abrir_fechar_janela('calendario_janela')"><h1 class="nomeapp">Calendário</h1></td>
             </tr>
         </table>
     </div>
@@ -37,13 +37,28 @@
     <!-- Janela Sobre -->
     <div id="sobre_janela">
         <div id="sobre_janela_topbar">
-            <img src="./Images/Detalhes/Close_button" id="close_button" onmouseout="backbuttonout('close_button')" onmousemove="backbuttonon('close_button')" onmouseup="abrir_janela('sobre_janela')">
+            <img src="./Images/Detalhes/Close_button" class="close_button" id="close_button" onmouseout="backbuttonout('close_button')" onmousemove="backbuttonon('close_button')" onmouseup="abrir_fechar_janela('sobre_janela')">
         </div>
     </div>
 
     <!-- Janela Calculadora -->
     <div id="calculadora_janela">
         <div id="calculadora_janela_topbar">
+            <img src="Images/Detalhes/Close_button" id="close_button_calculadora" class="close_button" onmouseout="backbuttonout('close_button_calculadora')" onmousemove="backbuttonon('close_button_calculadora')" onmouseup="abrir_fechar_janela('calculadora_janela')">
+        </div>
+    </div>
+
+    <!-- Janela Game -->
+    <div id="game_janela">
+        <div id="game_janela_topbar">
+            <img src="Images/Detalhes/Close_button" id="close_button_game" class="close_button" onmouseout="backbuttonout('close_button_game')" onmousemove="backbuttonon('close_button_game')" onmouseup="abrir_fechar_janela('game_janela')">
+        </div>
+    </div>
+
+    <!-- Janela Calendario -->
+    <div id="calendario_janela">
+        <div id="calendario_janela_topbar">
+            <img src="Images/Detalhes/Close_button" id="close_button_calendario" class="close_button" onmouseout="backbuttonout('close_button_calendario')" onmousemove="backbuttonon('close_button_calendario')" onmouseup="abrir_fechar_janela('calendario_janela')">
         </div>
     </div>
 

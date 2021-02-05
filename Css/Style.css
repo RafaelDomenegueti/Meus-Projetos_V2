@@ -85,25 +85,8 @@
     }
 
 
-/* Janela Sobre */
-    #sobre_janela{
-        background-color: #1E1E24;
-        position: fixed;
-        width: 300px;
-        height: 400px;
-        display: none;
-        top: 20%;
-        left: 50%;
-        margin-left: -150px;
-        z-index: 3;
-    }
-    #sobre_janela_topbar{
-        position: fixed;
-        background-color: #1E1E24;
-        width: 300px;
-        height: 30px;
-    }
-    #close_button{
+/* Janelas */
+    .close_button{
         position: absolute;
         width: 25px;
         top: 50%;
@@ -114,21 +97,81 @@
     }
 
 
-/* Janela Calculadora */
-    #calculadora_janela{
-        background-color: #1E1E24;
-        position: fixed;
-        width: 300px;
-        height: 400px;
-        display: none;
-        top: 20%;
-        left: 50%;
-        margin-left: -150px;
-        z-index: 3;
-    }
-    #calculadora_janela_topbar{
-        position: fixed;
-        background-color: #1E1E24;
-        width: 300px;
-        height: 30px;
-    }
+    /* Janela Sobre */
+        #sobre_janela{
+            background-color: #1E1E24;
+            position: fixed;
+            width: 300px;
+            height: 400px;
+            display: none;
+            top: 20%;
+            left: 50%;
+            margin-left: -150px;
+            z-index: 3;
+        }
+        #sobre_janela_topbar{
+            position: fixed;
+            background-color: #1E1E24;
+            width: 300px;
+            height: 30px;
+        }
+
+
+    /* Janela Calculadora */
+        #calculadora_janela{
+            background-color: #1E1E24;
+            position: fixed;
+            width: 300px;
+            height: 400px;
+            display: none;
+            top: 20%;
+            left: 50%;
+            margin-left: -150px;
+            z-index: 3;
+        }
+        #calculadora_janela_topbar{
+            position: fixed;
+            background-color: #1E1E24;
+            width: 300px;
+            height: 30px;
+        }
+    
+
+    /* Janela Game */
+        #game_janela{
+            background-color: #1E1E24;
+            position: fixed;
+            width: 300px;
+            height: 400px;
+            display: none;
+            top: 20%;
+            left: 50%;
+            margin-left: -150px;
+            z-index: 3;
+        }
+        #game_janela_topbar{
+            position: fixed;
+            background-color: #1E1E24;
+            width: 300px;
+            height: 30px;
+        }
+    
+
+    /* Janela Calendario */
+        #calendario_janela{
+            background-color: #1E1E24;
+            position: fixed;
+            width: 300px;
+            height: 400px;
+            display: none;
+            top: 20%;
+            left: 50%;
+            margin-left: -150px;
+            z-index: 3;
+        }
+        #calendario_janela_topbar{
+            position: fixed;
+            background-color: #1E1E24;
+            width: 300px;
+            height: 30px;
+        }

@@ -69,7 +69,7 @@
 
 
 // Abrir e Fechar Janelas
-    function abrir_janela(a){
+    function abrir_fechar_janela(a){
         menuapp.style.display="none"
         
         if (document.getElementById(a).style.display == "block"){
@@ -81,12 +81,13 @@
         }
     }
 
-var asds = document.getElementById("calculadora_janela")
 
 // Janelas arrastaveis
     window.onload = function () {
         Dragable(sobre_janela_topbar);
         Dragable(calculadora_janela_topbar);
+        Dragable(game_janela_topbar);
+        Dragable(calendario_janela_topbar);
     };
 
     //Adiciona eventos pra navegadores modernos e antigos
@@ -127,10 +128,27 @@ var asds = document.getElementById("calculadora_janela")
                 el.style.left = (x - xel) + 'px';
                 el.style.top  = (y - yel) + 'px';
 
-                // top_bar imita a janela
-                sobre_janela.style.left = (x - xel) + 'px';
-                sobre_janela.style.top  = (y - yel) + 'px';
-                sobre_janela.style.marginLeft = "0";
+                // janela imita a top_bar
+                if (el.id == "sobre_janela_topbar"){
+                    sobre_janela.style.left = (x - xel) + 'px';
+                    sobre_janela.style.top  = (y - yel) + 'px';
+                    sobre_janela.style.marginLeft = "0";
+                }
+                if (el.id == "calculadora_janela_topbar"){
+                    document.getElementById("calculadora_janela").style.left = (x - xel) + 'px';
+                    document.getElementById("calculadora_janela").style.top  = (y - yel) + 'px';
+                    document.getElementById("calculadora_janela").style.marginLeft = "0";
+                }
+                if (el.id == "game_janela_topbar"){
+                    document.getElementById("game_janela").style.left = (x - xel) + 'px';
+                    document.getElementById("game_janela").style.top  = (y - yel) + 'px';
+                    document.getElementById("game_janela").style.marginLeft = "0";
+                }
+                if (el.id == "calendario_janela_topbar"){
+                    document.getElementById("calendario_janela").style.left = (x - xel) + 'px';
+                    document.getElementById("calendario_janela").style.top  = (y - yel) + 'px';
+                    document.getElementById("calendario_janela").style.marginLeft = "0";
+                }
             }
         });
 
