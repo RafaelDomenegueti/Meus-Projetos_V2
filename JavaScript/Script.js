@@ -53,7 +53,7 @@
 // Backgrounds
     var Background = Math.floor(Math.random() * 6 + 1)
     console.log(Background)
-    corpo.style.backgroundImage = 'url(../Images/Backgrounds/'+ Background +'.gif)'
+    corpo.style.backgroundImage = 'url(./Images/Backgrounds/'+ Background +'.gif)'
 
 
 // Menu de Atividades
