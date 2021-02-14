@@ -5,6 +5,7 @@
     var sobre_janela = document.getElementById("sobre_janela")
     var sobre_janela_topbar = document.getElementById("sobre_janela_topbar")
     var close_button = document.getElementById("close_button")
+    var screen = document.getElementById("screen")
 
 
 // Data e Hora
@@ -80,6 +81,27 @@
             console.log("Block")
         }
     }
+
+
+// Calculadora
+    function button_calc(a){
+        if (a == "CE"){     // Limpa screen
+            screen.value = ""
+        } else if (a != "="){
+            screen.value = screen.value + a
+        }
+        if (a == "=" && screen.value != ""){
+            screen.value = eval(screen.value)
+        }
+    }
+    document.addEventListener("keydown", function(event) {
+        if(event.code == "NumpadEnter"){
+            screen.value = eval(screen.value)
+        }
+        if(event.code == "Escape"){
+            screen.value = ""
+        }
+    })
 
 
 // Janelas arrastaveis

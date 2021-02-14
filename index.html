@@ -51,33 +51,28 @@
 
         <table id="teclado">
             <tr>
-                <td><input type="button" value="7" class="button_teclado"></td>
-                <td><input type="button" value="8" class="button_teclado"></td>
-                <td><input type="button" value="9" class="button_teclado"></td>
-                <td><input type="button" value="CE" class="button_teclado"></td>
+                <td><input type="button" value="7" class="button_teclado" onclick="button_calc(7)"></td>
+                <td><input type="button" value="8" class="button_teclado" onclick="button_calc(8)"></td>
+                <td><input type="button" value="9" class="button_teclado" onclick="button_calc(9)"></td>
+                <td><input type="button" value="CE" class="button_teclado" onclick="button_calc(`CE`)"></td>
             </tr>
             <tr>
-                <td><input type="button" value="4" class="button_teclado"></td>
-                <td><input type="button" value="5" class="button_teclado"></td>
-                <td><input type="button" value="6" class="button_teclado"></td>
-                <td><input type="button" value="+" class="button_teclado_meio">
-                <input type="button" value="-" class="button_teclado_meio"></td>
+                <td><input type="button" value="4" class="button_teclado" onclick="button_calc(4)"></td>
+                <td><input type="button" value="5" class="button_teclado" onclick="button_calc(5)"></td>
+                <td><input type="button" value="6" class="button_teclado" onclick="button_calc(6)"></td>
+                <td><input type="button" value="+" class="button_teclado_meio" onclick="button_calc(`+`)">
+                <input type="button" value="-" class="button_teclado_meio" onclick="button_calc(`-`)"></td>
             </tr>
             <tr>
-                <td><input type="button" value="1" class="button_teclado"></td>
-                <td><input type="button" value="2" class="button_teclado"></td>
-                <td><input type="button" value="3" class="button_teclado"></td>
-                <td><input type="button" value="*" class="button_teclado_meio">
-                <input type="button" value="/" class="button_teclado_meio"></td>
+                <td><input type="button" value="1" class="button_teclado" onclick="button_calc(1)"></td>
+                <td><input type="button" value="2" class="button_teclado" onclick="button_calc(2)"></td>
+                <td><input type="button" value="3" class="button_teclado" onclick="button_calc(3)"></td>
+                <td><input type="button" value="*" class="button_teclado_meio" onclick="button_calc(`*`)">
+                <input type="button" value="/" class="button_teclado_meio" onclick="button_calc(`/`)"></td>
             </tr>
-            <tr>
-                <td><input type="button" value="0" id="button_zero"></td>
-                <td></td>
-                <td></td>
-                <td><input type="button" value="=" class="button_teclado"></td>
-            </tr>
+                <td><input type="button" value="0" id="button_zero" onclick="button_calc(0)"></td>
+                <td><input type="button" value="=" id="button_igual" class="button_teclado" onclick="button_calc(`=`)"></td>
         </table>
-
     </div>
 
     <!-- Janela Game -->
