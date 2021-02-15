@@ -7,6 +7,9 @@
     var close_button = document.getElementById("close_button")
     var screen = document.getElementById("screen")
 
+// Variaveis de Contagem
+    var zIndex = 10
+
 
 // Data e Hora
 
@@ -53,7 +56,6 @@
 
 // Backgrounds
     var Background = Math.floor(Math.random() * 6 + 1)
-    console.log(Background)
     corpo.style.backgroundImage = 'url(./Images/Backgrounds/'+ Background +'.gif)'
 
 
@@ -61,10 +63,8 @@
     function atividades(){
         if (menuapp.style.display == "block"){
             menuapp.style.display="none"
-            console.log("None")
         }else {
             menuapp.style.display="block"
-            console.log("Block")
         }
     }
 
@@ -75,12 +75,28 @@
         
         if (document.getElementById(a).style.display == "block"){
             document.getElementById(a).style.display="none"
-            console.log("None")
         }else {
             document.getElementById(a).style.display="block"
-            console.log("Block")
         }
     }
+
+
+// Zindex
+    addEventListener("mousedown", function(e){
+        zIndex = zIndex+1
+        if(e.path[0].id == "calculadora_janela_topbar"){
+            document.getElementById("calculadora_janela").style.zIndex = zIndex
+        }
+        if(e.path[0].id == "calendario_janela_topbar"){
+            document.getElementById("calendario_janela").style.zIndex = zIndex
+        }
+        if(e.path[0].id == "game_janela_topbar"){
+            document.getElementById("game_janela").style.zIndex = zIndex
+        }
+        if(e.path[0].id == "sobre_janela_topbar"){
+            document.getElementById("sobre_janela").style.zIndex = zIndex
+        }
+    })
 
 
 // Calculadora
