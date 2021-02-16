@@ -69,18 +69,6 @@
     }
 
 
-// Abrir e Fechar Janelas
-    function abrir_fechar_janela(a){
-        menuapp.style.display="none"
-        
-        if (document.getElementById(a).style.display == "block"){
-            document.getElementById(a).style.display="none"
-        }else {
-            document.getElementById(a).style.display="block"
-        }
-    }
-
-
 // Zindex
     addEventListener("mousedown", function(e){
         zIndex = zIndex+1
@@ -97,6 +85,19 @@
             document.getElementById("sobre_janela").style.zIndex = zIndex
         }
     })
+
+
+// Abrir e Fechar Janelas
+    function abrir_fechar_janela(a){
+        menuapp.style.display="none"
+        
+        if (document.getElementById(a).style.display == "block"){
+            document.getElementById(a).style.display="none"
+        }else {
+            document.getElementById(a).style.display="block"
+            document.getElementById(a).style.zIndex = zIndex
+        }
+    }
 
 
 // Calculadora
