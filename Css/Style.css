@@ -219,3 +219,53 @@
             width: 500px;
             height: 30px;
         }
+        #mes{
+            position: absolute;
+            background-color: rgb(95, 158, 197);
+            width: 460px;
+            height: 100px;
+            top: 50px;
+            left: 50%;
+            margin-left: -230px;
+            border-radius: 10px;
+        }
+        #nome_mes{
+            position: relative;
+            top: -35px;
+            font-size: 45pt;
+            text-align: center;
+            font-family: cursive;
+            color: white;
+            text-shadow: rgb(19, 79, 116) 1px 1px 4px;
+        }
+        .seta{
+            position: absolute;
+            width: 60px;
+            opacity: 20%;
+        }
+        #setadireita{
+            top: 50%;
+            margin-top: -30px;
+            left: 100%;
+            margin-left: -70px;
+        }
+        #setaesquerda{
+            transform: rotate(180deg);
+            top: 50%;
+            margin-top: -30px;
+            left: 0;
+        }
+        #tabela_calendario{
+            position: absolute;
+            top: 165px;
+            left: 10px;
+            width: 480px;
+            height: 320px;
+            color: white;
+            text-shadow: #16171a 2px 2px 2px 4px;
+            border-collapse: collapse;
+            border:1px solid #393a46;
+            box-shadow: #393a46 0.5px 0.5px 4px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
