@@ -121,9 +121,6 @@
     })
 
 
-// Calendario
-
-
 // Janelas arrastaveis
     window.onload = function () {
         Dragable(sobre_janela_topbar);
