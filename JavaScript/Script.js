@@ -122,7 +122,6 @@
 
 
 // Calendario
-    document.createElement()
 
 
 // Janelas arrastaveis
